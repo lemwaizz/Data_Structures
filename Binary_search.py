@@ -1,6 +1,4 @@
 import random
-random_list_1 = sorted(random.sample(range(130), 129))
-print(random_list_1)
 
 def binary_search(list, item):
     """this is a binary search function"""
@@ -18,4 +16,6 @@ def binary_search(list, item):
             high = mid + 1
     return None
 
-print(binary_search(random_list_1, 6))
+random_list_1 = sorted(random.sample(range(20), 19))
+print(random_list_1)
+print(binary_search(random_list_1, 100))
