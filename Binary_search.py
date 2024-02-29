@@ -16,6 +16,7 @@ def binary_search(list, item):
             high = mid + 1
     return None
 
-random_list_1 = sorted(random.sample(range(20), 19))
-print(random_list_1)
-print(binary_search(random_list_1, 100))
+random_list = list(range(26))
+random_list.sort()
+print(random_list)
+print(binary_search(random_list, 13))
