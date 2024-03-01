@@ -2,6 +2,8 @@
 """
 This is a binary search function
 """
+
+
 import random
 
 def binary_search(list, item):
@@ -19,8 +21,3 @@ def binary_search(list, item):
         else:
             high = mid + 1
     return None
-
-random_list = list(range(20))
-random_list.sort()
-print(random_list)
-print(binary_search(random_list, 13))
