@@ -4,8 +4,6 @@ This is a binary search function
 """
 
 
-import random
-
 def binary_search(list, item):
     """this is a binary search function"""
 
