@@ -2,7 +2,15 @@
 """
 This is a binary search function
 """
+file_path = "~/Data_Structures/numbers.txt"
+def import_numbers(file_path):
+    with open(file_path, 'r') as file:
+        numbers = file.readlines()
+    return [int(number.strip()) for number in numbers]
 
+# Usage
+numbers_list = import_numbers('numbers.txt')
+print(numbers_list)
 
 def binary_search(list, item):
     """this is a binary search function"""
@@ -19,3 +27,4 @@ def binary_search(list, item):
         else:
             high = mid + 1
     return None
+print(binary_search(numbers_list, 13))
