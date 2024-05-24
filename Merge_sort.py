@@ -25,7 +25,7 @@ class MergeSorting:
                 result.append(right[0])
                 right.pop(0)
         if left:
-            result += left
+            result += left #for remainders left
         if right:
             result += right
         return result
